@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Dashboard</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+    background: url('http://eskipaper.com/images/black-background-images-3.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Times New Roman;
+    line-height: 1.6;
+    margin: 2em;
+}
+
+.name-col {
+    text-align: left;
+}
+
+.button1{
+    background: -webkit-linear-gradient(top, lightgreen, darkgreen);
+}
+button{
+    border: none;
+    outline: none;
+    float: left;
+    margin : 135px 2px;
+    padding: 10px 14px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+      
+      th {
+    background-color: #F9A214;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+.record{
+  margin-top: 90px;
+}
+
+.attend{
+  margin-top: 20px;
+}
+h2{
+  color: white;
+}
+
+.color{
+  color: white;
+  font-size: 16px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Student Dashboard</h1>
+      <div class="row">
+        <div class="col-md-3">
+        <h2>Student name</h2>
+        <h2>Roll no</h2>
+      </div>
+      <div class="col-md-9 attend">
+        <form action="" method="post" id="" name="">
+          <table align="center" class="color">
+              <thead>
+                  <tr>
+                      <th class="name-col">Subjects</th>
+                      <th>WT</th>
+                      <th>MC</th>
+                      <th>CD</th>
+                      <th>EIT</th>
+                      <th>SE</th>
+                      <th>BIE</th>
+                      <th>MC-LAB</th>
+                      <th>SE-LAB</th>
+                      <th>EIT-LAB</th>
+                      <th>NW-LAB</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="attend">
+                      <td class="name-col">Lectures</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                  </tr>
+
+                  <tr class="attend">
+                  <td class="name-col">Attended</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>10</td>
+                      <td>10</td>
+                  </tr>
+
+                  <tr class="attend">
+                  <td class="name-col">Average</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                      <td>%</td>
+                  </tr>
+              </tbody>
+          </table>
+          </form>
+        
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-3 submit">
+            <a href="#"><button class="button1" id="button1">Show Record</button></a>
+        </div>
+
+      <div class="col-md-9 record" style="display:none">
+        <form action="" method="post" id="" name="">
+          <table align="center" class="color">
+              <thead>
+                  <tr>
+                      <th class="name-col">Date</th>
+                      <th>WT</th>
+                      <th>MC</th>
+                      <th>CD</th>
+                      <th>EIT</th>
+                      <th>SE</th>
+                      <th>BIE</th>
+                      <th>MC-LAB</th>
+                      <th>SE-LAB</th>
+                      <th>EIT-LAB</th>
+                      <th>NW-LAB</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="attend">
+                      <td class="name-col">11-12-17</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                  </tr>
+
+                  
+              </tbody>
+          </table>
+          </form>
+
+    </div>
+
+    <script src="jquery.js"></script>
+
+    <script src="bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $(".record").toggle();
+    });
+});
+</script>
+  </body>
+</html>
